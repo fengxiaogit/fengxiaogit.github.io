@@ -61,255 +61,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-函数" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/28/函数/" class="article-date">
-  <time datetime="2017-10-28T00:12:53.460Z" itemprop="datePublished">2017-10-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h4 id="函数只定义一次，但可能被执行或调用任意次。JavaScript函数是参数化的：函数的定义会包括一个称为形参的标识符列表，这些参数在函数体中像局部变量一样工作。函数调用会为形参提供实参的值。函数使用它们实参的值来计算返回值，成为该函数调用表达式的值。除了实参，每次调用还会拥有另一个值——this关键字的值。"><a href="#函数只定义一次，但可能被执行或调用任意次。JavaScript函数是参数化的：函数的定义会包括一个称为形参的标识符列表，这些参数在函数体中像局部变量一样工作。函数调用会为形参提供实参的值。函数使用它们实参的值来计算返回值，成为该函数调用表达式的值。除了实参，每次调用还会拥有另一个值——this关键字的值。" class="headerlink" title="函数只定义一次，但可能被执行或调用任意次。JavaScript函数是参数化的：函数的定义会包括一个称为形参的标识符列表，这些参数在函数体中像局部变量一样工作。函数调用会为形参提供实参的值。函数使用它们实参的值来计算返回值，成为该函数调用表达式的值。除了实参，每次调用还会拥有另一个值——this关键字的值。"></a>函数只定义一次，但可能被执行或调用任意次。JavaScript函数是参数化的：函数的定义会包括一个称为形参的标识符列表，这些参数在函数体中像局部变量一样工作。函数调用会为形参提供实参的值。函数使用它们实参的值来计算返回值，成为该函数调用表达式的值。除了实参，每次调用还会拥有另一个值——this关键字的值。</h4><h4 id="在JavaScript里，函数即对象，程序可以随意操控他们。比如，JavaScript可以把函数赋值给变量，或者作为参数传递给其他函数。因为函数就是对象，所以可以给它们设置属性，甚至调用它们的方法。"><a href="#在JavaScript里，函数即对象，程序可以随意操控他们。比如，JavaScript可以把函数赋值给变量，或者作为参数传递给其他函数。因为函数就是对象，所以可以给它们设置属性，甚至调用它们的方法。" class="headerlink" title="在JavaScript里，函数即对象，程序可以随意操控他们。比如，JavaScript可以把函数赋值给变量，或者作为参数传递给其他函数。因为函数就是对象，所以可以给它们设置属性，甚至调用它们的方法。"></a>在JavaScript里，函数即对象，程序可以随意操控他们。比如，JavaScript可以把函数赋值给变量，或者作为参数传递给其他函数。因为函数就是对象，所以可以给它们设置属性，甚至调用它们的方法。</h4><ul>
-<li>注意： 参数有形参和实参，形参相当于函数中定义的变量，实参是在运行时的函数调用时传入的参数。<h2 id="1-1函数定义"><a href="#1-1函数定义" class="headerlink" title="1.1函数定义"></a>1.1函数定义</h2></li>
-</ul>
-<p><code>function functionName([arg0,arg1,…argn]){
- statements
-}</code> </p>
-<ul>
-<li><h4 id="函数名称标识符。函数名称是函数声明语句必需的部分。它的用途就像变量的名字，新定义的函数对象会赋值给这个变量。对函数定义表达式来说，这个名字是可选的：如果存在，该名字只存在于函数体中，并指代该函数对象本身。"><a href="#函数名称标识符。函数名称是函数声明语句必需的部分。它的用途就像变量的名字，新定义的函数对象会赋值给这个变量。对函数定义表达式来说，这个名字是可选的：如果存在，该名字只存在于函数体中，并指代该函数对象本身。" class="headerlink" title="函数名称标识符。函数名称是函数声明语句必需的部分。它的用途就像变量的名字，新定义的函数对象会赋值给这个变量。对函数定义表达式来说，这个名字是可选的：如果存在，该名字只存在于函数体中，并指代该函数对象本身。"></a>函数名称标识符。函数名称是函数声明语句必需的部分。它的用途就像变量的名字，新定义的函数对象会赋值给这个变量。对函数定义表达式来说，这个名字是可选的：如果存在，该名字只存在于函数体中，并指代该函数对象本身。</h4></li>
-<li><h4 id="一对圆括号，其中包含由0个或者多个用逗号隔开的标识符组成的列表。这些标识符是函数的参数名称，他们就像函数体中的局部变量一样。"><a href="#一对圆括号，其中包含由0个或者多个用逗号隔开的标识符组成的列表。这些标识符是函数的参数名称，他们就像函数体中的局部变量一样。" class="headerlink" title="一对圆括号，其中包含由0个或者多个用逗号隔开的标识符组成的列表。这些标识符是函数的参数名称，他们就像函数体中的局部变量一样。"></a>一对圆括号，其中包含由0个或者多个用逗号隔开的标识符组成的列表。这些标识符是函数的参数名称，他们就像函数体中的局部变量一样。</h4></li>
-<li><h4 id="一对花括号，其中包含0条或多条JavaScript语句。这些语句构成了函数体：一旦调用函数，就会执行这些语句。"><a href="#一对花括号，其中包含0条或多条JavaScript语句。这些语句构成了函数体：一旦调用函数，就会执行这些语句。" class="headerlink" title="一对花括号，其中包含0条或多条JavaScript语句。这些语句构成了函数体：一旦调用函数，就会执行这些语句。"></a>一对花括号，其中包含0条或多条JavaScript语句。这些语句构成了函数体：一旦调用函数，就会执行这些语句。</h4><h2 id="1-2函数调用"><a href="#1-2函数调用" class="headerlink" title="1.2函数调用"></a>1.2函数调用</h2><h4 id="构成函数主体的JavaScript代码在定义之时并不会执行，只有调用该函数时，他们才会执行。有四种方式来调用JavaScript函数："><a href="#构成函数主体的JavaScript代码在定义之时并不会执行，只有调用该函数时，他们才会执行。有四种方式来调用JavaScript函数：" class="headerlink" title="构成函数主体的JavaScript代码在定义之时并不会执行，只有调用该函数时，他们才会执行。有四种方式来调用JavaScript函数："></a>构成函数主体的JavaScript代码在定义之时并不会执行，只有调用该函数时，他们才会执行。有四种方式来调用JavaScript函数：</h4></li>
-<li>作为函数</li>
-<li>作为方法</li>
-<li>作为构造函数</li>
-<li>通过它们的call（）和apply（）方法间接调用</li>
-</ul>
-<h4 id="一、函数调用形式"><a href="#一、函数调用形式" class="headerlink" title="一、函数调用形式"></a>一、函数调用形式</h4><h5 id="函数调用形式是最常见的形式，函数形式就是一般声明函数后直接调用。例如："><a href="#函数调用形式是最常见的形式，函数形式就是一般声明函数后直接调用。例如：" class="headerlink" title="函数调用形式是最常见的形式，函数形式就是一般声明函数后直接调用。例如："></a>函数调用形式是最常见的形式，函数形式就是一般声明函数后直接调用。例如：</h5><p><code>// 声明一个函数，并调用
-function func() {
-    alert(&quot;Hello World&quot;);
-}
-func();</code></p>
-<h6 id="或者"><a href="#或者" class="headerlink" title="或者"></a>或者</h6><p><code>// 使用函数的Lambda表达式定义函数，然后调用
-var func = function() {
-    alert(&quot;Hello&quot;);
-};
-func();</code></p>
-<h5 id="这两段代码都会在浏览器中弹出一个对话框，显示字符串中的文字，这个就是函数调用。"><a href="#这两段代码都会在浏览器中弹出一个对话框，显示字符串中的文字，这个就是函数调用。" class="headerlink" title="这两段代码都会在浏览器中弹出一个对话框，显示字符串中的文字，这个就是函数调用。"></a>这两段代码都会在浏览器中弹出一个对话框，显示字符串中的文字，这个就是函数调用。</h5><p>在函数调用模式中，函数里的 this 关键字指全局对象，如果在浏览器中就是 window 对象。例如：<br><code>var func = function() {
-    alert(this);
-};
-func();//弹出对话框，       打印出[object Window]</code></p>
-<h4 id="二、方法调用模式"><a href="#二、方法调用模式" class="headerlink" title="二、方法调用模式"></a>二、方法调用模式</h4><h5 id="函数调用模式很简单，是最基本的调用方式。但是同样的是函数，将其赋值给一个对象的成员以后，就不一样了。将函数赋值给对象的成员后，那么这个就不在称为函数，而应该叫做方法。例如："><a href="#函数调用模式很简单，是最基本的调用方式。但是同样的是函数，将其赋值给一个对象的成员以后，就不一样了。将函数赋值给对象的成员后，那么这个就不在称为函数，而应该叫做方法。例如：" class="headerlink" title="函数调用模式很简单，是最基本的调用方式。但是同样的是函数，将其赋值给一个对象的成员以后，就不一样了。将函数赋值给对象的成员后，那么这个就不在称为函数，而应该叫做方法。例如："></a>函数调用模式很简单，是最基本的调用方式。但是同样的是函数，将其赋值给一个对象的成员以后，就不一样了。将函数赋值给对象的成员后，那么这个就不在称为函数，而应该叫做方法。例如：</h5><p><code>// 定义一个函数
-var func = function() {
-    alert(&quot;我是一个函数么?&quot;);
-};
-// 将其赋值给一个对象
-var o = {};
-o.fn = func; // 注意这里不要加圆括号
-// 调用
-o.fn();</code></p>
-<h5 id="此时，o-fn则是方法，不是函数了。实际上fn的方法体与func是一模一样的，但是这里有个微妙的不同。"><a href="#此时，o-fn则是方法，不是函数了。实际上fn的方法体与func是一模一样的，但是这里有个微妙的不同。" class="headerlink" title="此时，o.fn则是方法，不是函数了。实际上fn的方法体与func是一模一样的，但是这里有个微妙的不同。"></a>此时，o.fn则是方法，不是函数了。实际上fn的方法体与func是一模一样的，但是这里有个微妙的不同。</h5><p><code>// 接上面的代码
-alert(o.fn === func);
-打印结果是true，这个表明两个函数是一样的东西，但是修改一下函数的代码：
-// 修改函数体
-var func = function() {
-    alert(this);
-};
-var o = {};
-o.fn = func;
-// 比较
-alert(o.fn === func);
-// 调用
-func();
-o.fn();</code></p>
-<h5 id="这里的运行结果是，两个函数是相同的，因此打印结果是true。但是由于两个函数的调用是不一样的，func的调用，打印的是-object-Window-，而-o-fn-的打印结果是-object-Object-。"><a href="#这里的运行结果是，两个函数是相同的，因此打印结果是true。但是由于两个函数的调用是不一样的，func的调用，打印的是-object-Window-，而-o-fn-的打印结果是-object-Object-。" class="headerlink" title="这里的运行结果是，两个函数是相同的，因此打印结果是true。但是由于两个函数的调用是不一样的，func的调用，打印的是 [object Window]，而 o.fn 的打印结果是 [object Object]。"></a>这里的运行结果是，两个函数是相同的，因此打印结果是true。但是由于两个函数的调用是不一样的，func的调用，打印的是 [object Window]，而 o.fn 的打印结果是 [object Object]。</h5><p>这里便是函数调用与方法调用的区别，函数调用中，this 专指全局对象window，而在方法中 this 专指当前对象，即 o.fn中的this 指的就是对象o。</p>
-<h4 id="三、构造器调用模式"><a href="#三、构造器调用模式" class="headerlink" title="三、构造器调用模式"></a>三、构造器调用模式</h4><h5 id="同样是函数，在单纯的函数模式下this表示window；在对象方法模式下，this指的是当前对象。除了这两种情况，JavaScript中函数还可以是构造器。将函数作为构造器来使用的语法就是在函数调用前面加上一个new关键字。如代码："><a href="#同样是函数，在单纯的函数模式下this表示window；在对象方法模式下，this指的是当前对象。除了这两种情况，JavaScript中函数还可以是构造器。将函数作为构造器来使用的语法就是在函数调用前面加上一个new关键字。如代码：" class="headerlink" title="同样是函数，在单纯的函数模式下this表示window；在对象方法模式下，this指的是当前对象。除了这两种情况，JavaScript中函数还可以是构造器。将函数作为构造器来使用的语法就是在函数调用前面加上一个new关键字。如代码："></a>同样是函数，在单纯的函数模式下this表示window；在对象方法模式下，this指的是当前对象。除了这两种情况，JavaScript中函数还可以是构造器。将函数作为构造器来使用的语法就是在函数调用前面加上一个new关键字。如代码：</h5><p><code>// 定义一个构造函数
-var Person = function() {
-    this.name = &quot;程序员&quot;;
-    this.sayHello = function() {
-        alert(&quot;你好，这里是&quot; + this.name);
-    };
-};
-// 调用构造器，创建对象
-var p = new Person();
-// 使用对象
-p.sayHello();</code></p>
-<h5 id="上面的例子首先创建一个构造函数Person，然后使用构造函数创建对象p。这里使用-new语法。然后在使用对象调用sayHello-方法。从例子可以看到，此时this指的是对象本身。除了上面的使用以外，函数作为构造器还有几个变化，分别为："><a href="#上面的例子首先创建一个构造函数Person，然后使用构造函数创建对象p。这里使用-new语法。然后在使用对象调用sayHello-方法。从例子可以看到，此时this指的是对象本身。除了上面的使用以外，函数作为构造器还有几个变化，分别为：" class="headerlink" title="上面的例子首先创建一个构造函数Person，然后使用构造函数创建对象p。这里使用 new语法。然后在使用对象调用sayHello()方法。从例子可以看到，此时this指的是对象本身。除了上面的使用以外，函数作为构造器还有几个变化，分别为："></a>上面的例子首先创建一个构造函数Person，然后使用构造函数创建对象p。这里使用 new语法。然后在使用对象调用sayHello()方法。从例子可以看到，此时this指的是对象本身。除了上面的使用以外，函数作为构造器还有几个变化，分别为：</h5><ul>
-<li>1、所有需要由对象使用的属性，必须使用 this 引导；</li>
-<li>2、函数的return语句意义被改写，如果返回非对象，就返回this。</li>
-<li>构造器中的this我们需要分析创建对象的过程，知道this的意义。如下面代码：<br><code>var Person = function() {
-  this.name = &quot;程序员&quot;;
-};
-var p = new Person();</code><h5 id="这里首先定义了函数Person，下面分析一下整个执行过程："><a href="#这里首先定义了函数Person，下面分析一下整个执行过程：" class="headerlink" title="这里首先定义了函数Person，下面分析一下整个执行过程："></a>这里首先定义了函数Person，下面分析一下整个执行过程：</h5></li>
-<li>1、程序在执行到这一句的时候，不会执行函数体，因此JavaScript的解释器并不知道这个函数的内容。</li>
-<li>2、接下来执行new关键字，创建对象，解释器开辟内存，得到对象的引用，将新对象的引用交给函数。</li>
-<li>3、紧接着执行函数，将传过来的对象引用交给 this。也就是说，在构造方法中，this 就是刚刚被 new 创建出来的对象。</li>
-<li>4、然后为this添加成员，也就是为对象添加成员。</li>
-<li>5、最后函数结束，返回this，将this交给左边的变量。<h5 id="分析过构造函数的执行以后，可以得到，构造函数中的this就是当前对象。构造器中的return在构造函数中-return的意义发生了变化，首先如果在构造函数中，如果返回的是一个对象，那么就保留原意。如果返回的是非对象，比如数字、布尔和字符串，那么就返回-this，如果没有-return-语句，那么也返回-this，看下面代码："><a href="#分析过构造函数的执行以后，可以得到，构造函数中的this就是当前对象。构造器中的return在构造函数中-return的意义发生了变化，首先如果在构造函数中，如果返回的是一个对象，那么就保留原意。如果返回的是非对象，比如数字、布尔和字符串，那么就返回-this，如果没有-return-语句，那么也返回-this，看下面代码：" class="headerlink" title="分析过构造函数的执行以后，可以得到，构造函数中的this就是当前对象。构造器中的return在构造函数中:return的意义发生了变化，首先如果在构造函数中，如果返回的是一个对象，那么就保留原意。如果返回的是非对象，比如数字、布尔和字符串，那么就返回 this，如果没有 return 语句，那么也返回 this，看下面代码："></a>分析过构造函数的执行以后，可以得到，构造函数中的this就是当前对象。构造器中的return在构造函数中:return的意义发生了变化，首先如果在构造函数中，如果返回的是一个对象，那么就保留原意。如果返回的是非对象，比如数字、布尔和字符串，那么就返回 this，如果没有 return 语句，那么也返回 this，看下面代码：</h5>`// 返回一个对象的 return<br>var ctr = function() {<br>  this.name = “赵晓”;<br>  return {<pre><code>name:&quot;亮亮&quot;
-</code></pre>  };<br>};<br>// 创建对象<br>var p = new ctr();<br>// 访问name属性<br>alert(p.name);`<h5 id="执行代码，这里打印的结果是”亮亮”。因为构造方法中返回的是一个对象，那么保留-return-的意义，返回内容为-return-后面的对象，再看下面代码："><a href="#执行代码，这里打印的结果是”亮亮”。因为构造方法中返回的是一个对象，那么保留-return-的意义，返回内容为-return-后面的对象，再看下面代码：" class="headerlink" title="执行代码，这里打印的结果是”亮亮”。因为构造方法中返回的是一个对象，那么保留 return 的意义，返回内容为 return 后面的对象，再看下面代码："></a>执行代码，这里打印的结果是”亮亮”。因为构造方法中返回的是一个对象，那么保留 return 的意义，返回内容为 return 后面的对象，再看下面代码：</h5>代码如下:<br><code>// 定义返回非对象数据的构造器
-var ctr = function() {
-  this.name = &quot;赵晓&quot;;
-  return &quot;亮亮&quot;;
-};
-// 创建对象
-var p = new ctr();
-// 使用
-alert(p);
-alert(p.name);</code><h5 id="代码运行结果是，先弹窗打印-object-Object-，然后打印”赵晓”，因为这里-return-的是一个字符串，属于基本类型，那么这里的-return语句无效，返回的是this对象，因此第一个打印的是-object-Object-而第二个不会打印-undefined。"><a href="#代码运行结果是，先弹窗打印-object-Object-，然后打印”赵晓”，因为这里-return-的是一个字符串，属于基本类型，那么这里的-return语句无效，返回的是this对象，因此第一个打印的是-object-Object-而第二个不会打印-undefined。" class="headerlink" title="代码运行结果是，先弹窗打印[object Object]，然后打印”赵晓”，因为这里 return 的是一个字符串，属于基本类型，那么这里的 return语句无效，返回的是this对象，因此第一个打印的是[object Object]而第二个不会打印 undefined。"></a>代码运行结果是，先弹窗打印[object Object]，然后打印”赵晓”，因为这里 return 的是一个字符串，属于基本类型，那么这里的 return语句无效，返回的是this对象，因此第一个打印的是[object Object]而第二个不会打印 undefined。</h5></li>
-</ul>
-<h4 id="四、apply、call调用模式"><a href="#四、apply、call调用模式" class="headerlink" title="四、apply、call调用模式"></a>四、apply、call调用模式</h4><h5 id="函数作为对象还有-apply-方法与-call-方法可以使用，这便是第四种调用模式"><a href="#函数作为对象还有-apply-方法与-call-方法可以使用，这便是第四种调用模式" class="headerlink" title="函数作为对象还有 apply 方法与 call 方法可以使用，这便是第四种调用模式."></a>函数作为对象还有 apply 方法与 call 方法可以使用，这便是第四种调用模式.</h5><h6 id="首先介绍-apply-模式，这里-apply-模式既可以像函数一样使用，也可以像方法一样使用，可以说是一个灵活的使用方法。"><a href="#首先介绍-apply-模式，这里-apply-模式既可以像函数一样使用，也可以像方法一样使用，可以说是一个灵活的使用方法。" class="headerlink" title="首先介绍 apply 模式，这里 apply 模式既可以像函数一样使用，也可以像方法一样使用，可以说是一个灵活的使用方法。"></a>首先介绍 apply 模式，这里 apply 模式既可以像函数一样使用，也可以像方法一样使用，可以说是一个灵活的使用方法。</h6><ul>
-<li><h5 id="首先看看语法：函数名-apply-对象-参数数组"><a href="#首先看看语法：函数名-apply-对象-参数数组" class="headerlink" title="首先看看语法：函数名.apply(对象, 参数数组);"></a>首先看看语法：函数名.apply(对象, 参数数组);</h5><h5 id="举例说明："><a href="#举例说明：" class="headerlink" title="举例说明："></a>举例说明：</h5>1、新建两个js文件，分别为”js1.js”与”js2.js”;</li>
-</ul>
-<p>2、添加代码</p>
-<p><code>// js1.js 文件中
-var func1 = function() {
-    this.name = &quot;程序员&quot;;
-};
-func1.apply(null);
-alert(name);
-// js2.js 文件
-var func2 = function() {
-    this.name = &quot;程序员&quot;;
-};
-var o = {};
-func2.apply(o);
-alert(o.name);</code></p>
-<h5 id="3、分别运行着两段代码，可以发现第一个文件中的-name-属性已经加载到全局对象-window-中-而第二个文件中的name属性是在传入的对象-o-中，即第一个相当于函数调用，第二个相当于方法调用。"><a href="#3、分别运行着两段代码，可以发现第一个文件中的-name-属性已经加载到全局对象-window-中-而第二个文件中的name属性是在传入的对象-o-中，即第一个相当于函数调用，第二个相当于方法调用。" class="headerlink" title="3、分别运行着两段代码，可以发现第一个文件中的 name 属性已经加载到全局对象 window 中;而第二个文件中的name属性是在传入的对象 o 中，即第一个相当于函数调用，第二个相当于方法调用。"></a>3、分别运行着两段代码，可以发现第一个文件中的 name 属性已经加载到全局对象 window 中;而第二个文件中的name属性是在传入的对象 o 中，即第一个相当于函数调用，第二个相当于方法调用。</h5><h5 id="这里的参数是方法本身所带的参数，但是需要用数组的形式存储在，比如代码："><a href="#这里的参数是方法本身所带的参数，但是需要用数组的形式存储在，比如代码：" class="headerlink" title="这里的参数是方法本身所带的参数，但是需要用数组的形式存储在，比如代码："></a>这里的参数是方法本身所带的参数，但是需要用数组的形式存储在，比如代码：</h5><p>`// 一个数组的例子<br>var arr1 = [1,2,3,[4,5],[6,7,8]];<br>// 将其展开<br>var arr2 = arr1.conact.apply([], arr1);</p>
-<ul>
-<li><h5 id="然后介绍一下-call-模式，call-模式与-apply-模式最大的不同在于-call-中的参数不用数组，看下面代码就清楚了："><a href="#然后介绍一下-call-模式，call-模式与-apply-模式最大的不同在于-call-中的参数不用数组，看下面代码就清楚了：" class="headerlink" title="然后介绍一下 call 模式，call 模式与 apply 模式最大的不同在于 call 中的参数不用数组，看下面代码就清楚了："></a>然后介绍一下 call 模式，call 模式与 apply 模式最大的不同在于 call 中的参数不用数组，看下面代码就清楚了：</h5><code>// 定义方法
-var func = function(name, age, sex) {
-  this.name = name;
-  this.age = age;
-  this.sex = sex;
-};
-// 创建对象
-var o = {};
-// 给对象添加成员
-// apply 模式
-var p1 = func.apply(o, [&quot;赵晓&quot;, 19, &quot;男&quot;]);
-// call 模式
-var p2 = func.call(o, &quot;赵晓&quot;, 19, &quot;男&quot;);</code><h5 id="上面的代码，apply-模式与-call-模式的结果是一样的。实际上，使用-apply-模式和-call-模式，可以任意的操作控制-this-的意义，在函数-js-的设-计模式中使用广泛。"><a href="#上面的代码，apply-模式与-call-模式的结果是一样的。实际上，使用-apply-模式和-call-模式，可以任意的操作控制-this-的意义，在函数-js-的设-计模式中使用广泛。" class="headerlink" title="上面的代码，apply 模式与 call 模式的结果是一样的。实际上，使用 apply 模式和 call 模式，可以任意的操作控制 this 的意义，在函数 js 的设 计模式中使用广泛。"></a>上面的代码，apply 模式与 call 模式的结果是一样的。实际上，使用 apply 模式和 call 模式，可以任意的操作控制 this 的意义，在函数 js 的设 计模式中使用广泛。</h5><h4 id="简单小结一下，js中的函数调用有四种模式，分别是：函数式、方法式、构造-器式和-apply、call式。而这些模式中，this-的含义分别为：在函数中-this-是全局对象-window，在方法中this指当前对象，在构造函数中-this-是被创建的对象，在-apply-模式中-this-可以随意的指定-。在-apply-模式中如果使用null，就是函数模式，如果使用对象，就是方法模式。"><a href="#简单小结一下，js中的函数调用有四种模式，分别是：函数式、方法式、构造-器式和-apply、call式。而这些模式中，this-的含义分别为：在函数中-this-是全局对象-window，在方法中this指当前对象，在构造函数中-this-是被创建的对象，在-apply-模式中-this-可以随意的指定-。在-apply-模式中如果使用null，就是函数模式，如果使用对象，就是方法模式。" class="headerlink" title="简单小结一下，js中的函数调用有四种模式，分别是：函数式、方法式、构造 器式和 apply、call式。而这些模式中，this 的含义分别为：在函数中 this 是全局对象 window，在方法中this指当前对象，在构造函数中 this 是被创建的对象，在 apply 模式中 this 可以随意的指定.。在 apply 模式中如果使用null，就是函数模式，如果使用对象，就是方法模式。"></a>简单小结一下，js中的函数调用有四种模式，分别是：函数式、方法式、构造 器式和 apply、call式。而这些模式中，this 的含义分别为：在函数中 this 是全局对象 window，在方法中this指当前对象，在构造函数中 this 是被创建的对象，在 apply 模式中 this 可以随意的指定.。在 apply 模式中如果使用null，就是函数模式，如果使用对象，就是方法模式。</h4></li>
-</ul>
-<h2 id="1-3函数的实参和形参"><a href="#1-3函数的实参和形参" class="headerlink" title="1.3函数的实参和形参"></a>1.3函数的实参和形参</h2><h4 id="一-函数形参"><a href="#一-函数形参" class="headerlink" title="一.函数形参:"></a>一.函数形参:</h4><p>形参是函数声明时规定的参数</p>
-<p><code>function func(a,b) {
-  //代码块
-}</code></p>
-<p>a和b是函数func的形式参数（形参）。</p>
-<h4 id="二-函数实参"><a href="#二-函数实参" class="headerlink" title="二.函数实参:"></a>二.函数实参:</h4><p>实参是函数调用时实际传递的参数</p>
-<p><code>function func(a,b) {
-  //代码块
-}
-func(1)
-func(1,2,3)</code></p>
-<p>实际参数（实参）的数目可以和形参不同。</p>
-<h2 id="1-4函数的属性、方法和构造函数"><a href="#1-4函数的属性、方法和构造函数" class="headerlink" title="1.4函数的属性、方法和构造函数"></a>1.4函数的属性、方法和构造函数</h2><h4 id="1-length属性"><a href="#1-length属性" class="headerlink" title="1. length属性"></a>1. length属性</h4><h5 id="length代表函数定义时参数-形参-的个数。arguement-length代码实际传入参数-实参-的个数"><a href="#length代表函数定义时参数-形参-的个数。arguement-length代码实际传入参数-实参-的个数" class="headerlink" title="length代表函数定义时参数(形参)的个数。arguement.length代码实际传入参数(实参)的个数"></a>length代表函数定义时参数(形参)的个数。arguement.length代码实际传入参数(实参)的个数</h5><p>Js代码<br><code>function check(args){  
-    var actual = args.length;  
-    var expected = args.callee.length;  
-    if(actual!==expected){  
-        document.writeln(&#39;Execped &#39; + expected + &#39;, got &#39; +actual);  
-        //throw Error(&#39;Execped &#39; + expected+ &#39;, got &#39; +actual);  
-        //return &#39;Execped &#39; + expected+ &#39;, got &#39; +actual;  
-    }  
-}  
-function add3(x,y,z){  
-    check(arguments);  
-    return x+y+z; //再执行后面的逻辑  
-}  
-add3(2,4,6,8); //=&gt;Execped 3, got 4</code></p>
-<h4 id="2-prototype-属性"><a href="#2-prototype-属性" class="headerlink" title="2.prototype 属性"></a>2.prototype 属性</h4><h5 id="每个函数都包含一个prototype属性，它指向一个对象的应用，这个对象是原型对象。当将函数用作构造函数时，新创建的对象会从原型对象上继承属性和方法。"><a href="#每个函数都包含一个prototype属性，它指向一个对象的应用，这个对象是原型对象。当将函数用作构造函数时，新创建的对象会从原型对象上继承属性和方法。" class="headerlink" title="每个函数都包含一个prototype属性，它指向一个对象的应用，这个对象是原型对象。当将函数用作构造函数时，新创建的对象会从原型对象上继承属性和方法。"></a>每个函数都包含一个prototype属性，它指向一个对象的应用，这个对象是原型对象。当将函数用作构造函数时，新创建的对象会从原型对象上继承属性和方法。</h5><p>Js代码 </p>
-<p>//使用prototype扩充Javascript的类<br>/<em>Javascript基于原型机制是动态的：对象从其原型继承属性，如果创建对象之后原型的属性发生改变，也会影响到继承这个原型的所有<br>实例。这意味这我们可以通过给原型添加新方法来扩充Javascript。</em>/<br>//这个方法用于去除字符串开头和结尾的空格<br><code>String.prototype.trim=String.prototype.trim || function(){   
-    if(!this) return this; //空字符串不做处理  
-    return this.replace(/^\s+|\s+$/g,&#39;&#39;);  
-};  
-Function.prototype.getName=function(){  
-    //如果函数中有name属性就返回name的值，否则取&#39;function&#39;和&#39;(&#39;之间的字符 return this.name||this.toString().match(&#39;/function\s*([^()*]\(&#39;)[1];   
-};  
-var ggg=&#39; sggg   &#39;;  
-document.writeln(ggg.trim()+ggg.trim()); //=&gt; sgggsggg  
-function funct(){};  
-document.writeln(funct.getName()); //=&gt;funct</code> </p>
-<h4 id="3-call-和-apply-方法"><a href="#3-call-和-apply-方法" class="headerlink" title="3. call() 和 apply()方法"></a>3. call() 和 apply()方法</h4><ul>
-<li>语法：call([thisObj[,arg1[, arg2[,   [,.argN]]]]])</li>
-<li><p>定义：调用一个对象的一个方法，以另一个对象替换当前对象。 </p>
-<h5 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h5><p>call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由thisObj指定的新对象。如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。 </p>
-</li>
-<li><p>语法：apply([thisObj[,argArray]]) </p>
-</li>
-<li>定义：应用某一对象的一个方法，用另一个对象替换当前对象。 <h5 id="说明：-1"><a href="#说明：-1" class="headerlink" title="说明："></a>说明：</h5>如果 argArray 不是一个有效的数组或者不是 arguments 对象，那么将导致一个TypeError。 如果没有提供 argArray 和 thisObj 任何一个参数，那么 Global 对象将被用作 thisObj， 并且无法被传递任何参数。<br>Js代码<br>`//使用两个 call 就实现多重继承了<br>function bird(){<br>  this.fly=function(){  <pre><code>document.writeln(&apos;fly&apos;);  
-</code></pre>  }<br>}<br>function human(){<br>  this.speak=function(){  <pre><code>document.writeln(&apos;speak&apos;);  
-</code></pre>  }<br>}<br>function animal(){<br>  bird.call(this); //将bird的方法放到this(此时代表animal)上执行<br>  human.call(this); //将human的方法放到this(此时代表animal)上执行<br>}<br>var niaoren =new animal();<br>niaoren.fly();<br>niaoren.speak(); `</li>
-</ul>
-<h5 id="说了call-，当然还有-apply，这两个方法基本上是一个意思，区别在于-call-的第二个参数可以是任意类型，而apply的第二个参数必须是数组，也可以是arguments"><a href="#说了call-，当然还有-apply，这两个方法基本上是一个意思，区别在于-call-的第二个参数可以是任意类型，而apply的第二个参数必须是数组，也可以是arguments" class="headerlink" title="说了call ，当然还有 apply，这两个方法基本上是一个意思，区别在于 call 的第二个参数可以是任意类型，而apply的第二个参数必须是数组，也可以是arguments."></a>说了call ，当然还有 apply，这两个方法基本上是一个意思，区别在于 call 的第二个参数可以是任意类型，而apply的第二个参数必须是数组，也可以是arguments.</h5><h4 id="4-bind-方法"><a href="#4-bind-方法" class="headerlink" title="4 bind()方法"></a>4 bind()方法</h4><p>它的主要作用是将函数绑定到某个对象。当在函数f()上调用bind()方法并传入一个对象o作为参数，这个方法将返回一个新的函数。(以函数调用方式)调用新的函数将会把原始的函数f()当做o的方法来调用，传入新函数的任何实参都将传入原始函数。 </p>
-<p>Js代码<br><code>function f(y){return this.x+y}; //待绑定的函数   
-var o={x:1};  //将要绑定的对象  
-var g=f.bind(o);  
-document.writeln(g(2)); //=&gt;3  //通过g(2)来调用o.f(2)  
-//另一种绑定  
-function bind(f,o){  
- if(f.bind) return f.bind(o); //如果bind()存在，使用bind();  
- else return function(){ //否则这样绑定  
-    return f.apply(o, arguments);   
- };  
-}</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/28/函数/" data-id="cj9akq5sv0000cgpjsldgrk30" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-H5新增内容" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/17/H5新增内容/" class="article-date">
-  <time datetime="2017-10-17T03:14:23.000Z" itemprop="datePublished">2017-10-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端开发/">前端开发</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/17/H5新增内容/">H5新增内容</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="H5新增内容"><a href="#H5新增内容" class="headerlink" title="H5新增内容"></a>H5新增内容</h1><h3 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/17/H5新增内容/" data-id="cj8v1m6ve0000jou0tbskzz5l" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/h5/">h5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/14/hello-world/" class="article-date">
@@ -345,7 +96,7 @@ function bind(f,o){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/14/hello-world/" data-id="cj8v1m6vu0001jou06rzprgps" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/14/hello-world/" data-id="cj9akz7rn000044pjph8dj1uy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -361,33 +112,12 @@ function bind(f,o){
           <aside id="sidebar">
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
-    </div>
-  </div>
-
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/h5/">h5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li></ul>
-    </div>
-  </div>
-
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/h5/" style="font-size: 10px;">h5</a> <a href="/tags/html/" style="font-size: 10px;">html</a>
-    </div>
-  </div>
-
   
     
   <div class="widget-wrap">
@@ -404,14 +134,6 @@ function bind(f,o){
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2017/10/28/函数/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/10/17/H5新增内容/">H5新增内容</a>
-          </li>
         
           <li>
             <a href="/2017/10/14/hello-world/">Hello World</a>
